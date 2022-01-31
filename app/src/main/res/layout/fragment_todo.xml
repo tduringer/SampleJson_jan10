@@ -39,8 +39,19 @@
         android:layout_height="0dp"
         android:text="@string/users"
         app:layout_constraintBottom_toTopOf="@id/glh1"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/photoBtn"
         app:layout_constraintStart_toEndOf="@id/postBtn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/photoBtn"
+        style="?materialButtonOutlinedStyle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/Photos"
+        app:layout_constraintBottom_toTopOf="@id/glh1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/userBtn"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.Guideline

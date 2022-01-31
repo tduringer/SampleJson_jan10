@@ -3,4 +3,5 @@
     <string name="todo">todos</string>
     <string name="post">posts</string>
     <string name="users">users</string>
+    <string name="Photos">Photos</string>
 </resources>

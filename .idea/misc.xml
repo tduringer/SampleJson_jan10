@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/User/AndroidStudioProjects/SampleJson_jan10_fork_glide_images/app/src/main/res/layout/fragment_todo.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/SampleJson_jan10_fork_glide_images/app/src/main/res/layout/row_item_photo.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/SampleJson_jan10_fork_glide_images/app/src/main/res/layout/row_item_post.xml" value="0.25416666666666665" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2644927536231884" />
         <entry key="app/src/main/res/layout/fragment_todo.xml" value="0.2644927536231884" />
         <entry key="app/src/main/res/layout/row_item_post.xml" value="0.16983695652173914" />

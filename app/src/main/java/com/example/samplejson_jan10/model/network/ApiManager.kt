@@ -11,4 +11,8 @@ class ApiManager {
 
     suspend fun getPosts() = sampleJsonService.getPosts()
 
+    suspend fun getPhotos() = sampleJsonService.getPhotos()
+
+
+
 }
