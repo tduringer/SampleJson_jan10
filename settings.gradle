@@ -6,5 +6,5 @@ dependencyResolutionManagement {
         jcenter() // Warning: this repository is going to shut down soon
     }
 }
-rootProject.name = "TodosApi_jan10"
+rootProject.name = "samplejson_jan10"
 include ':app'

@@ -1,4 +1,4 @@
-package com.example.todosapi_jan10
+package com.example.samplejson_jan10
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

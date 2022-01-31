@@ -1,4 +1,4 @@
-package com.example.todosapi_jan10.model.network.models
+package com.example.samplejson_jan10.model.network.models
 
 import com.squareup.moshi.JsonClass
 

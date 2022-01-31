@@ -1,4 +1,4 @@
-package com.example.todosapi_jan10.model.network
+package com.example.samplejson_jan10.model.network
 
 import com.squareup.moshi.Moshi
 import retrofit2.Retrofit

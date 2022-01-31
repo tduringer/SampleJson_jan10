@@ -1,4 +1,4 @@
-package com.example.todosapi_jan10
+package com.example.samplejson_jan10
 
 import org.junit.Test
 
