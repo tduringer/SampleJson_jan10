@@ -4,10 +4,13 @@ import androidx.lifecycle.*
 import com.example.samplejson_jan10.model.repository.SampleJsonRepository
 import com.example.samplejson_jan10.utils.Resource
 import com.example.samplejson_jan10.utils.SelectedData
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import java.lang.RuntimeException
+import javax.inject.Inject
 
-class SampleJsonViewModel(
+@HiltViewModel
+class SampleJsonViewModel @Inject constructor(
     private val sampleJsonRepository: SampleJsonRepository
 ) : ViewModel() {
 

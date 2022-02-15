@@ -1,17 +1,18 @@
 package com.example.samplejson_jan10.model.repository
 
-import com.example.samplejson_jan10.model.network.ApiManager
+import com.example.samplejson_jan10.model.network.SampleJsonService
 import com.example.samplejson_jan10.model.network.models.Post
 import com.example.samplejson_jan10.model.network.models.Todo
 import com.example.samplejson_jan10.model.network.models.user.User
 import com.example.samplejson_jan10.utils.Resource
+import javax.inject.Inject
 
-class SampleJsonRepository(
-    private val apiManager: ApiManager
+class SampleJsonRepository @Inject constructor(
+    private val sampleJsonService: SampleJsonService
 ) {
     suspend fun getTodos(): Resource<List<Todo>> {
         return try {
-            val response = apiManager.getTodos()
+            val response = sampleJsonService.getTodos()
             if (response.isSuccessful && response.body() != null) {
                 Resource.Success(response.body()!!)
             } else {
@@ -24,7 +25,7 @@ class SampleJsonRepository(
 
     suspend fun getPosts(): Resource<List<Post>> {
         return try {
-            val response = apiManager.getPosts()
+            val response = sampleJsonService.getPosts()
             if (response.isSuccessful && response.body() != null) {
                 Resource.Success(response.body()!!)
             } else {
@@ -37,7 +38,7 @@ class SampleJsonRepository(
 
     suspend fun getUsers(): Resource<List<User>> {
         return try {
-            val response = apiManager.getUsers()
+            val response = sampleJsonService.getUsers()
             if (response.isSuccessful && response.body() != null) {
                 Resource.Success(response.body()!!)
             } else {

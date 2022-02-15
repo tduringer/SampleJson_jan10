@@ -10,11 +10,9 @@ import androidx.fragment.app.activityViewModels
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.samplejson_jan10.databinding.FragmentTodoBinding
-import com.example.samplejson_jan10.model.network.ApiManager
 import com.example.samplejson_jan10.model.network.models.Post
 import com.example.samplejson_jan10.model.network.models.Todo
 import com.example.samplejson_jan10.model.network.models.user.User
-import com.example.samplejson_jan10.model.repository.SampleJsonRepository
 import com.example.samplejson_jan10.utils.Resource
 import com.example.samplejson_jan10.utils.SelectedData
 import com.example.samplejson_jan10.utils.showToast
@@ -22,19 +20,15 @@ import com.example.samplejson_jan10.view.adapter.PostAdapter
 import com.example.samplejson_jan10.view.adapter.TodoAdapter
 import com.example.samplejson_jan10.view.adapter.UserAdapter
 import com.example.samplejson_jan10.viewmodel.SampleJsonViewModel
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class SampleJsonFragment : Fragment() {
 
     private var _binding: FragmentTodoBinding? = null
     private val binding: FragmentTodoBinding get() = _binding!!
 
-    private val viewModel: SampleJsonViewModel by activityViewModels {
-        SampleJsonViewModel.Factory(
-            SampleJsonRepository(
-                ApiManager()
-            )
-        )
-    }
+    private val viewModel: SampleJsonViewModel by activityViewModels()
 
     private val todoAdapter by lazy {
         TodoAdapter()
